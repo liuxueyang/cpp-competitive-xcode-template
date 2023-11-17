@@ -56,7 +56,7 @@ const ull Pr = 131;
 #define all(a) (a).begin(),(a).end()
 #define SZ(a) int((a).size())
 
-#ifdef _DEBUG
+#ifdef DEBUG
 #define debug1(x) cout << #x" = " << x << endl;
 #define debug2(x,y) cout << #x" = " << x << " "#y" = " << y << endl;
 #define debug3(x,y,z) cout << #x" = " << x << " "#y" = " << y << " "#z" = " << z << endl;
@@ -66,7 +66,7 @@ const ull Pr = 131;
 #define debug3
 #endif
 
-#ifdef _DEBUG
+#ifdef DEBUG
 
 struct ListNode {
     int val;
