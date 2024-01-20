@@ -113,9 +113,9 @@ template <typename T, typename... V> void _print(T t, V... v) {
 #define debug3(x, y, z)                                                        \
   cout << #x " = " << x << " " #y " = " << y << " " #z " = " << z << endl;
 #define dbg(x...)                                                              \
-  cerr << "\e[91m" << __func__ << ":" << __LINE__ << " [" << #x << "] = [";    \
+  cerr << __func__ << ":" << __LINE__ << " [" << #x << "] = [";                \
   _print(x);                                                                   \
-  cerr << "\e[39m" << endl;
+  cerr << endl;
 #else
 #define debug1
 #define debug2
@@ -129,7 +129,7 @@ void solve() {
 
 int main(void) {
 #ifdef _DEBUG
-  freopen("a.in", "r", stdin);
+  freopen("input.txt", "r", stdin);
 #endif
   std::ios::sync_with_stdio(false);
   cin.tie(NULL);
